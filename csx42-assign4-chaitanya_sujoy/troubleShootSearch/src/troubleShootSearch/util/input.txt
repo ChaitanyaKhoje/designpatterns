@@ -1,0 +1,24 @@
+In software engineering, a software design pattern is a general, reusable solution to a commonly occurring problem within a given context in software design. It is not a finished design that can be transformed directly into source or machine code. 
+It is a description or template for how to solve a problem that can be used in many different situations. 
+Design patterns are formalized best practices that the programmer can use to solve common problems when designing an application or system.
+Object-oriented design patterns typically show relationships and interactions between classes or objects, without specifying the final application classes or objects that are involved. 
+Patterns that imply mutable state may be unsuited for functional programming languages, some patterns can be rendered unnecessary in languages that have built-in support for solving the problem they are trying to solve, and object-oriented patterns are not necessarily suitable for non-object-oriented languages.
+Design patterns may be viewed as a structured approach to computer programming intermediate between the levels of a programming paradigm and a concrete algorithm.
+Abstract factory provide an interface for creating families of related or dependent objects without specifying their concrete classes.
+Builder pattern separate the construction of a complex object from its representation, allowing the same construction process to create various representations.
+Dependency injection, a class accepts the objects it requires from an injector instead of creating the objects directly.
+Factory method, define an interface for creating a single object, but let subclasses decide which class to instantiate. Factory Method lets a class defer instantiation to subclasses.
+Lazy initialization, Tactic of delaying the creation of an object, the calculation of a value, or some other expensive process until the first time it is needed. This pattern appears in the GoF catalog as "virtual proxy", an implementation strategy for the Proxy pattern.
+Multiton, Ensure a class has only named instances, and provide a global point of access to them.
+Object pool, Avoid expensive acquisition and release of resources by recycling objects that are no longer in use. Can be considered a generalisation of connection pool and thread pool patterns.
+Prototype pattern, specify the kinds of objects to create using a prototypical instance, and create new objects from the 'skeleton' of an existing object, thus boosting performance and keeping memory footprints to a minimum.
+RAII, ensure that resources are properly released by tying them to the lifespan of suitable objects.
+Singleton, ensure a class has only one instance, and provide a global point of access to it.
+Adapter, Convert the interface of a class into another interface clients expect. An adapter lets classes work together that could not otherwise because of incompatible interfaces. The enterprise integration pattern equivalent is the translator.
+Bridge, Decouple an abstraction from its implementation allowing the two to vary independently.
+Composite, Compose objects into tree structures to represent part-whole hierarchies. Composite lets clients treat individual objects and compositions of objects uniformly.
+Decorator, Attach additional responsibilities to an object dynamically keeping the same interface. Decorators provide a flexible alternative to subclassing for extending functionality.
+Extension object, Adding functionality to a hierarchy without changing the hierarchy.
+Facade, Provide a unified interface to a set of interfaces in a subsystem.
+Facade defines a higher-level interface that makes the subsystem easier to use.
+Flyweight, Use sharing to support large numbers of similar objects efficiently.

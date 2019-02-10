@@ -1,0 +1,57 @@
+<project name="studentCoursesBackup" default="compile_all" basedir="..">
+
+  <property name="BUILD.compiler"       value="modern"/>
+  <property name="src"                  value="src"/>
+  <property name="BUILD"                value="../../src/BUILD"/>
+  <property name="classes"              value="../../src/BUILD/classes"/>
+
+  <target name="all" depends="compile_all"/>
+
+  <target name="compile_all"
+          depends="studentCoursesBackup"/>
+
+  <target name="clean">
+       <delete dir="../../src/BUILD"/>
+  </target>
+
+  <!-- Prepare target directories -->
+  <target name="prepare">
+        <mkdir dir="../../src/BUILD"/>
+        <mkdir dir="../../src/BUILD/classes"/>
+  </target>
+
+ <target name="jar">
+        <mkdir dir="../../src/BUILD/jar"/>
+        <jar destfile="../../src/BUILD/jar/studentCoursesBackup.jar" basedir="../../src/BUILD/classes">
+            <manifest>
+                <attribute name="Main-Class" value="studentCoursesBackup.driver.Driver"/>
+            </manifest>
+        </jar>
+    </target>
+
+  <!-- ** means all subdirectories as well -->
+  <!-- * means all files in the current directory -->
+  <!-- for just java files use *.java -->
+
+  <target name="studentCoursesBackup" depends="prepare">
+    <javac includeantruntime="false" srcdir="${src}"
+	           includes="studentCoursesBackup/**"
+           excludes="**/package.html"
+           destdir="../../src/BUILD/classes"
+           classpath="${classes}"
+           debug="on"
+           optimize="on"
+           deprecation="off"/>
+  </target>
+
+<target name="run" depends="jar">
+        <java jar="../../src/BUILD/jar/studentCoursesBackup.jar" fork="true">
+		<arg value="${arg0}"/>
+		<arg value="${arg1}"/>
+        <arg value="${arg2}"/>
+        <arg value="${arg3}"/>
+        <arg value="${arg4}"/>
+        </java>	
+    </target>
+
+</project>

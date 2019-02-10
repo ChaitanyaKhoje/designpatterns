@@ -1,0 +1,24 @@
+design pattern 
+description
+formalized best
+relationships and
+functional programming
+to computer
+Abstract factory
+its representation
+an inject
+subclass decide
+of delay
+name instances
+resource by
+exist object
+proper released
+Single
+not or
+implementation enabling
+to show
+the identical
+a order
+a combined
+Facade characterize
+Use partaking
